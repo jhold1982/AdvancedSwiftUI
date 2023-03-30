@@ -7,14 +7,32 @@
 
 import SwiftUI
 
-struct _DFilter: View {
+class DrawingModel: ObservableObject {
+	var angle = 0.0
+}
+
+struct ThreeDimensonalFilter: View {
+	
+	@StateObject private var model = DrawingModel()
+	
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+		TimelineView(.animation) { timeline in
+			Canvas { context, size in
+				model.angle += 0.1
+				context.translateBy(x: 200, y: 200)
+				
+				let t = ProjectionTransform(CATransform3DMakeRotation(model.angle, 1, 1, 1))
+				context.addFilter(.projectionTransform(t))
+				
+				context.draw(Text("Hello, world!").font(.largeTitle), at: .zero)
+				_ = timeline.date
+			}
+		}
     }
 }
 
-struct _DFilter_Previews: PreviewProvider {
+struct ThreeDimensonalFilter_Previews: PreviewProvider {
     static var previews: some View {
-        _DFilter()
+		ThreeDimensonalFilter()
     }
 }

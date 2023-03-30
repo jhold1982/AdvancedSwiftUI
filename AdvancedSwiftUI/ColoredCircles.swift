@@ -7,36 +7,13 @@
 
 import SwiftUI
 
-struct LayeringContextView: View {
+struct ColoredCircles: View {
     var body: some View {
 		Canvas { context, size in
-			/// color circles example
-//			context.opacity = 0.5
-//			context.drawLayer(content: drawCircles)
 			
-			/// mint hello world example
-//			if let text = context.resolveSymbol(id: "Welcome") {
-//				context.translateBy(x: 215, y: 100)
-//
-//				for _ in 1...10 {
-//					context.rotate(by: .degrees(36))
-//					context.draw(text, at: .zero)
-//				}
-//			}
-//		} symbols: {
-//			Text("Hello, world!")
-//				.padding()
-//				.background(.mint)
-//				.foregroundColor(.white)
-//				.clipShape(Capsule())
-//				.font(.title)
-//				.tag("Welcome")
-			/// blur filter example
-			var contextCopy = context
-			contextCopy.addFilter(.blur(radius: 3))
-			contextCopy.draw(Text("Hello, world").font(.title), at: CGPoint(x: 100, y: 100))
-			context.draw(Text("Hello, world").font(.title), at: CGPoint(x: 100, y: 150))
-			context.draw(Text("Hello, world").font(.title), at: CGPoint(x: 100, y: 200))
+			/// color circles example
+			context.opacity = 0.5
+			context.drawLayer(content: drawCircles)
 		}
     }
 	func drawCircles(in innerContext: inout GraphicsContext) {
@@ -55,8 +32,8 @@ struct LayeringContextView: View {
 	}
 }
 
-struct LayeringContextView_Previews: PreviewProvider {
+struct ColoredCircles_Previews: PreviewProvider {
     static var previews: some View {
-        LayeringContextView()
+		ColoredCircles()
     }
 }

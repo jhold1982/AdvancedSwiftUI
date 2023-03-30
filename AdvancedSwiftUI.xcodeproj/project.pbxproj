@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		642B637829D61DEB009BB090 /* MintHelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B637729D61DEB009BB090 /* MintHelloWorld.swift */; };
+		642B637A29D61E2E009BB090 /* BlurFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B637929D61E2E009BB090 /* BlurFilter.swift */; };
+		642B639729D62DDB009BB090 /* ThreeDimensonalFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B639629D62DDB009BB090 /* ThreeDimensonalFilter.swift */; };
+		642B639929D62F35009BB090 /* LightDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B639829D62F35009BB090 /* LightDark.swift */; };
+		642B639B29D631B2009BB090 /* BlurryHello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B639A29D631B2009BB090 /* BlurryHello.swift */; };
 		6472F5A929D460E0004E3170 /* AdvancedSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6472F5A829D460E0004E3170 /* AdvancedSwiftUIApp.swift */; };
 		6472F5AB29D460E0004E3170 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6472F5AA29D460E0004E3170 /* ContentView.swift */; };
 		6472F5AD29D460E1004E3170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6472F5AC29D460E1004E3170 /* Assets.xcassets */; };
 		6472F5B029D460E1004E3170 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6472F5AF29D460E1004E3170 /* Preview Assets.xcassets */; };
+		6472F5B729D4610D004E3170 /* ColoredCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6472F5B629D4610D004E3170 /* ColoredCircles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		642B637729D61DEB009BB090 /* MintHelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintHelloWorld.swift; sourceTree = "<group>"; };
+		642B637929D61E2E009BB090 /* BlurFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurFilter.swift; sourceTree = "<group>"; };
+		642B639629D62DDB009BB090 /* ThreeDimensonalFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDimensonalFilter.swift; sourceTree = "<group>"; };
+		642B639829D62F35009BB090 /* LightDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightDark.swift; sourceTree = "<group>"; };
+		642B639A29D631B2009BB090 /* BlurryHello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurryHello.swift; sourceTree = "<group>"; };
 		6472F5A529D460E0004E3170 /* AdvancedSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6472F5A829D460E0004E3170 /* AdvancedSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedSwiftUIApp.swift; sourceTree = "<group>"; };
 		6472F5AA29D460E0004E3170 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6472F5AC29D460E1004E3170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6472F5AF29D460E1004E3170 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6472F5B629D4610D004E3170 /* ColoredCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredCircles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				6472F5A829D460E0004E3170 /* AdvancedSwiftUIApp.swift */,
 				6472F5AA29D460E0004E3170 /* ContentView.swift */,
+				6472F5B629D4610D004E3170 /* ColoredCircles.swift */,
+				642B637729D61DEB009BB090 /* MintHelloWorld.swift */,
+				642B637929D61E2E009BB090 /* BlurFilter.swift */,
+				642B639629D62DDB009BB090 /* ThreeDimensonalFilter.swift */,
+				642B639829D62F35009BB090 /* LightDark.swift */,
+				642B639A29D631B2009BB090 /* BlurryHello.swift */,
 				6472F5AC29D460E1004E3170 /* Assets.xcassets */,
 				6472F5AE29D460E1004E3170 /* Preview Content */,
 			);
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				642B639B29D631B2009BB090 /* BlurryHello.swift in Sources */,
 				6472F5AB29D460E0004E3170 /* ContentView.swift in Sources */,
+				6472F5B729D4610D004E3170 /* ColoredCircles.swift in Sources */,
+				642B639929D62F35009BB090 /* LightDark.swift in Sources */,
 				6472F5A929D460E0004E3170 /* AdvancedSwiftUIApp.swift in Sources */,
+				642B637A29D61E2E009BB090 /* BlurFilter.swift in Sources */,
+				642B639729D62DDB009BB090 /* ThreeDimensonalFilter.swift in Sources */,
+				642B637829D61DEB009BB090 /* MintHelloWorld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,29 @@ import SwiftUI
 
 struct MintHelloWorld: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+		VStack {
+			Canvas { context, size in
+				
+				/// mint hello world example
+				if let text = context.resolveSymbol(id: "Welcome") {
+					context.translateBy(x: 215, y: 375)
+
+					for _ in 1...10 {
+						context.rotate(by: .degrees(36))
+						context.draw(text, at: .zero)
+					}
+				}
+			} symbols: {
+				Text("Hello, world!")
+					.padding()
+					.background(.mint)
+					.foregroundColor(.white)
+					.clipShape(Capsule())
+					.font(.title)
+					.tag("Welcome")
+			}
+		}
+		
     }
 }
 
